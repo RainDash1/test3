@@ -24,7 +24,7 @@ async function loadWebsite() {
     if (!url) return alert("Please enter a URL!");
 
     // Replace with your deployed backend URL
-    const proxyUrl = `https://YOUR_RAILWAY_PROJECT_URL/proxy?url=${encodeURIComponent(url)}`;
+    const proxyUrl = `https://test3-production-7284.up.railway.app/proxy?url=${encodeURIComponent(url)}`;
     
     document.getElementById("proxyFrame").src = proxyUrl;
 }
