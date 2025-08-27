@@ -32,3 +32,11 @@ app.get("/proxy", async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Proxy server running on port ${PORT}`);
 });
+app.get("/", (req, res) => {
+    res.send(`
+        <h2>Web Proxy is Running!</h2>
+        <p>Use <code>/proxy?url=YOUR_URL</code> to load a website.</p>
+        <p>Example: <a href="/proxy?url=https://example.com">/proxy?url=https://example.com</a></p>
+    `);
+});
+
